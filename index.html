@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TvCvel - Sempre com Cascavel</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./js/youmax.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/youmax.css"/>
+    <style>
+      body{
+        font-family: 'Montserrat', sans-serif;
+      }
+      .dados h5{
+        font-size: 22px;
+        margin-top: 15px;
+      }
+      .dados{
+        margin-bottom: 10px;
+      }
+      .dados img{
+        border-radius: 10px;
+      }
+      h1, h2, h3, h4, h5, h6, header, .dados{
+        text-align: center;
+      }
+      h1, h2, h3, h4, h5, h6, header{
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+      }
+      header{
+        background-color: #007128;
+      }
+      header > .row > .medium-4, #content{
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      header > .row > .medium-4{
+        background: rgb(255,255,255);
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        margin: 10px 0;
+      }
+      #content{
+        background-color: rgb(0,39,108);
+      }
+      footer, footer h6{
+        color: #fff;
+        background: #c80000;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="medium-offset-4 medium-4 columns">
+          <img src="img/logo_v1.svg" alt="TvCvel - Sempre com Cascavel">
+        </div>
+      </div>
+    </header>
+
+    <div id="content">
+      <div class="row">
+        <div class="medium-offset-1 medium-10 columns">
+          <h2>O site da TvCvel encontra-se em construção.</h2>
+          <h5>Porém, enquanto isso você pode receber nossas atualizações através de nosso facebook e ver nossas últimas produções em nosso Youtube!</h5>
+        </div>
+      </div>
+      <div class="row dados">
+        <div class="medium-4 columns">
+          <h3>Telefone:</h3>
+          <h5>(45) 3306-9053</h5>
+        </div>
+        <div class="medium-4 columns">
+          <h3>Email:</h3>
+          <img src="https://placeholdit.imgix.net/~text?txtsize=25&txt=tvcascavel@gmail.com&w=250&h=50&bg=0000fe&txtclr=ffffff" alt="email"/>
+        </div>
+        <div class="medium-4 columns">
+          <h3>Celular:</h3>
+          <h5>(45) 9949-9053</h5>
+        </div>
+      </div>
+      <div class="row">
+        <style>
+          /*.fb-page, .fb-page span, .fb-page span iframe{
+            width: 100% !important;
+          }*/
+          .fb{
+            text-align: center;
+          }
+        </style>
+        <div class="medium-6 columns fb">
+          <div class="fb-page" data-href="https://www.facebook.com/TvCvel" data-width="500px" data-height="523px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true" style="width: 100%;"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/TvCvel"><a href="https://www.facebook.com/TvCvel">TvCvel Cascavel</a></blockquote></div></div>
+        </div>
+        <div class="medium-6 columns">
+          <div id="youmax"></div>
+          <script type="text/javascript">
+          $('#youmax').empty().append(' loading ...');
+        
+            $('#youmax').youmax({
+              apiKey:'AIzaSyDEm5wGLsWi2G3WG40re-DAJcWioQSpJ6o',
+              youTubeChannelURL:"http://youtube.com/user/tvcascavel",
+              
+              //youTubePlaylistURL:$('#youTubePlaylistUrl').val(),
+              youmaxDefaultTab:"UPLOADS",
+              youmaxColumns:2,
+              showVideoInLightbox:true,
+              maxResults:2,
+              
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="medium-8 medium-offset-2 column">
+          <h6>&copy; 2015 - TvCvel - Todos os direitos reservados.</h6>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4&appId=123154967781334";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>
